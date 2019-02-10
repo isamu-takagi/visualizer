@@ -8,3 +8,9 @@ int main(int argc, char *argv[])
     window.show();
     return application.exec();
 }
+
+// #include <QSurfaceFormat>
+// QSurfaceFormat format;
+// format.setVersion(3, 0);
+// format.setProfile(QSurfaceFormat::CoreProfile);
+// QSurfaceFormat::setDefaultFormat(format);

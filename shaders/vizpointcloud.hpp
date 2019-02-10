@@ -2,6 +2,8 @@
 #define VIZPOINTCLOUD_HPP
 
 #include <QOpenGLFunctions>
+#include <QOpenGLShaderProgram>
+#include <QOpenGLBuffer>
 
 class VizPointCloud
 {
@@ -15,11 +17,11 @@ class VizPointCloud
 
     private:
 
-        static GLint program;
+        static QOpenGLShaderProgram program;
         static GLint location_vertex;
         static GLint location_color;
 
-        GLuint vbo;
+        QOpenGLBuffer vbo;
         int size;
 
 };
